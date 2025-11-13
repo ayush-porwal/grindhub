@@ -1,8 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: "export",
-  poweredByHeader: false,
+    output: 'export',
+    poweredByHeader: false,
 };
 
 export default nextConfig;
