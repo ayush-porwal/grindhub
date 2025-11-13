@@ -1,4 +1,5 @@
 import CopyButton from "./components/CopyButton";
+import ThemeToggle from "./components/ThemeToggle";
 export const dynamic = "force-static";
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
           />
           <span className="text-lg font-semibold tracking-tight">GrindHub</span>
         </div>
-        <nav className="hidden gap-6 text-sm md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-4 text-sm md:flex" aria-label="Primary">
           <a className="opacity-80 hover:opacity-100" href="#why">
             Why Join
           </a>
@@ -36,6 +37,9 @@ export default function Home() {
           <a className="opacity-80 hover:opacity-100" href="#faq">
             FAQ
           </a>
+          <div className="ml-2 hidden md:block">
+            <ThemeToggle />
+          </div>
         </nav>
         <div className="flex items-center gap-3">
           <a
@@ -52,6 +56,9 @@ export default function Home() {
           >
             {WHATSAPP_URL ? "Join WhatsApp" : "WhatsApp Link Coming Soon"}
           </a>
+          <div className="md:hidden">
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
@@ -123,28 +130,16 @@ export default function Home() {
                 <div className="rounded-[11px] bg-zinc-50 p-4 dark:bg-zinc-950">
                   <div className="grid gap-2 font-mono text-sm leading-relaxed">
                     <div>
-                      <span className="text-blue-600 dark:text-blue-400">
-                        Short Message:
-                      </span>
-                      <span className="ml-1 text-zinc-800 dark:text-zinc-200">
-                        Hey, here is the question I solved today.
-                      </span>
+                      <span className="font-medium text-zinc-900 dark:text-zinc-100">Short Message:</span>
+                      <span className="ml-1 text-zinc-800 dark:text-zinc-200">Hey, here is the question I solved today.</span>
                     </div>
                     <div>
-                      <span className="text-blue-600 dark:text-blue-400">
-                        Question:
-                      </span>
-                      <span className="ml-1 text-zinc-700 dark:text-zinc-300">
-                        [Short description or link]
-                      </span>
+                      <span className="font-medium text-zinc-900 dark:text-zinc-100">Question:</span>
+                      <span className="ml-1 text-zinc-700 dark:text-zinc-300">[Short description or link]</span>
                     </div>
                     <div>
-                      <span className="text-blue-600 dark:text-blue-400">
-                        Solution:
-                      </span>
-                      <span className="ml-1 text-zinc-700 dark:text-zinc-300">
-                        [Main idea or insight in one or two lines]
-                      </span>
+                      <span className="font-medium text-zinc-900 dark:text-zinc-100">Solution:</span>
+                      <span className="ml-1 text-zinc-700 dark:text-zinc-300">[Main idea or insight in one or two lines]</span>
                     </div>
                   </div>
                 </div>

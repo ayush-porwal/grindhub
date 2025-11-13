@@ -2,6 +2,7 @@
   "name": "grindhub",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://grindhub.ayushporwal.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
